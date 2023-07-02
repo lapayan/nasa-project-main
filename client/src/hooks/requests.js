@@ -1,4 +1,4 @@
-const API_URL = 'https://nasa-project-main.vercel.app/v1';
+const API_URL = 'https://nasa-project-main-nvshx0d49-lapayan.vercel.app/';
 
 // Load planets and return as JSON.
 async function httpGetPlanets() {
