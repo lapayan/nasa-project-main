@@ -1,24 +1,25 @@
+const path = require('path')
 const mongoose = require('mongoose');
-require('dotenv').config();
+require('dotenv').config({ path: path.resolve(__dirname, '../../.env') });
 
-const MONGO_URI = process.env.MONGO_URI;
+const MONGO_URL = process.env.MONGODB_URI;  
 mongoose.connection.once('open', () => {
   console.log('MongoDB connection ready!');
 });
 
 mongoose.connection.on('error', (err) => {
-  console.error(err);
+  console.error(err); 
 });
 
 async function mongoConnect() {
-  await mongoose.connect(MONGO_URI);
+  await mongoose.connect(MONGO_URL);
 }
 
-async function mongoDisconnect() {
+async function mongoDisconnect() { 
   await mongoose.disconnect();
 }
 
-module.exports = {
+module.exports = { 
   mongoConnect,
   mongoDisconnect,
 }
