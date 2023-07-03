@@ -1,4 +1,4 @@
-const API_URL = 'https://octopus-app-qtcwd.ondigitalocean.app/v1'
+const API_URL = 'https://octopus-app-qtcwd.ondigitalocean.app'
 
 // Load planets and return as JSON.
 async function httpGetPlanets() {

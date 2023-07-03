@@ -8,7 +8,7 @@ const api = require('./routes/api');
 const app = express();
 
 app.use(cors({
-  origin: 'https://nasa-project-main-frontend.vercel.app/*',
+  origin: 'https://nasa-project-main-frontend.vercel.app',
 }));
 app.use(morgan('combined'));
 
