@@ -1,4 +1,4 @@
-const API_URL = 'https://nasa-project-main-nvshx0d49-lapayan.vercel.app/';
+const API_URL = 'https://octopus-app-qtcwd.ondigitalocean.app/v1'
 
 // Load planets and return as JSON.
 async function httpGetPlanets() {
