@@ -1,6 +1,6 @@
 const path = require('path')
 const mongoose = require('mongoose');
-require('dotenv').config({ path: path.resolve(__dirname, '../../.env') });
+require('dotenv').config({ path: path.resolve(__dirname, '../../keys/.env') });
 
 const MONGO_URL = process.env.MONGODB_URI;  
 mongoose.connection.once('open', () => {
