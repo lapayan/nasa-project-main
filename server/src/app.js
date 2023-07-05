@@ -19,7 +19,7 @@ app.use('/v1', api);
 
 app.get('/*', (req, res) => {
   res.send("Hello World!");
-  res.sendFile(path.join(__dirname, '..', 'public', '/client/public/index.html'));
+  res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
 });
 
 module.exports = app;
