@@ -7,7 +7,7 @@ const { mongoConnect } = require('./services/mongo');
 const { loadPlanetsData } = require('./models/planets.model');
 const { loadLaunchData } = require('./models/launches.model');
 
-const PORT = 80;
+const PORT = process.env.PORT;
 
 const server = https.createServer({
   key: process.env.HTTPS_KEY, 
