@@ -1,4 +1,4 @@
-const https = require('https');
+const http = require('http');
 
 require('dotenv').config();
 
@@ -9,10 +9,7 @@ const { loadLaunchData } = require('./models/launches.model');
 
 const PORT = process.env.PORT || 8000;
 
-const server = https.createServer({
-  key: process.env.HTTPS_KEY, 
-  cert: process.env.HTTPS_CERT 
-},app);
+const server = http.createServer(app);
 
 async function startServer() {
   await mongoConnect();
