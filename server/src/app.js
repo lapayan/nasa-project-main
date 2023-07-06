@@ -8,7 +8,7 @@ const api = require('./routes/api');
 const app = express();
 
 app.use(cors({
-  origin: '137.184.114.190',
+  origin: 'https://localhost:8000',
 }));
 app.use(morgan('combined'));
 
