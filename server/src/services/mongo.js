@@ -1,8 +1,8 @@
 const path = require('path')
 const mongoose = require('mongoose');
-// require('dotenv').config({ path: path.resolve(__dirname, '../../keys/.env') });
+require('dotenv').config({ path: path.resolve(__dirname, '../../keys/.env') });
 
-const MONGO_URL = "mongodb+srv://nasa-api:YlGFsjIqnqkGAGZ9@nasa-api.huk5pvl.mongodb.net/NasaSpaceXData?retryWrites=true&w=majority";  
+const MONGO_URL = process.env.MONGODB_URI;  
 mongoose.connection.once('open', () => {
   console.log('MongoDB connection ready!');
 });
