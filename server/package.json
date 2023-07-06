@@ -26,6 +26,7 @@
     "mongoose": "^6.2.7",
     "morgan": "^1.10.0",
     "nasa-project": "file:..",
+    "nginx": "^1.0.8",
     "pm2": "^5.2.0"
   },
   "devDependencies": {
